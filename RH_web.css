@@ -1,0 +1,220 @@
+body {
+    font-family: "Inter";
+    font-optical-sizing: auto;
+    line-height: 1.6;
+    margin: 0;
+    background-image: url('office-supplies.jpg');
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+    align-self: stretch;
+}
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.main-nav {
+    align-items: center;
+}
+
+#logo {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.right-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.right-nav a {
+    color: #000;
+    text-decoration: none;
+}
+
+.bottom-half {
+    margin: auto;
+}
+
+.intro-text {
+    gap: 10px;
+    position: relative;
+    margin: 70px auto;
+    text-align: center;
+}
+
+.intro-text:before{
+    content:" ";
+    display: block;
+    height: 2px;
+    width: 130px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background: black;
+  }
+
+.intro-text:after{
+    content:" ";
+    height: 2px;
+    width: 130px;
+    background: black;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+
+mark {
+    background-color: pink;
+}
+
+h1 {
+    margin: 0;
+}
+
+h3 {
+    font-weight: 200;
+    font-size: medium;
+    margin: 0;
+}
+
+.icons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-icon {
+    font-size: 24px;
+    transition: color 0.3s ease;
+    margin-bottom: 20px auto;
+    color: #333;
+    
+}
+
+.social-icon:hover {
+    color: #00A0DC;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; /* Adjust the gap between images as needed */
+    align-items: center;
+}
+
+.image-item {position: relative;}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    object-fit: cover;
+}
+
+.img_text {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.image-item:hover .image {
+    opacity: 0.3;
+}
+
+.image-item:hover .img_text {
+    opacity: 1;
+}
+
+.text {
+    color: black;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.project_info {
+    display: flex;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+
+/*this collapses everything to one column at 768px*/
+@media screen and (max-width: 768px) {
+    .container {
+        width: 70%;
+        margin-bottom: 20px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
+
+    .top-half {
+        flex-direction: column;
+    }
+
+    .bottom-half {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro-text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .intro-text::after {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .intro-text::before {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image-grid {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+}
