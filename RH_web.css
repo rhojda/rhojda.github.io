@@ -117,7 +117,10 @@ h3 {
     align-items: center;
 }
 
-.image-item {position: relative;}
+.image-item {
+    position: relative;
+    
+}
 
 .image {
     opacity: 1;
