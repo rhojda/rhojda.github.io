@@ -3,7 +3,6 @@ body {
     font-optical-sizing: auto;
     line-height: 1.6;
     margin: 0;
-    background-image: url('office-supplies.jpg');
 }
 
 .container {
@@ -11,7 +10,6 @@ body {
     margin: auto;
     align-self: stretch;
 }
-
 
 .nav {
     display: flex;
@@ -167,6 +165,81 @@ a {
     display: flex;
 }
 
+.bottom-half-work{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.case-study {
+    display: flex;
+    border-radius: 15px;
+    padding: 4%;
+
+    height: max-content;
+}
+
+.left-half {
+    display: flex;
+    flex-direction: column;
+
+    gap: 130px;
+}
+
+.upper-half {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.lower-half {
+    display: flex;
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+.lower-left {
+    display: flex;
+    flex-direction: column;
+
+    gap: 30px;
+}
+
+.right-half {
+    width: 60%;
+}
+
+.left-half {
+    width: 40%;
+}
+
+.case-study-type {
+    font-size: 15px;
+}
+
+.case-study-title {
+    font-size: 35px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    background: #FFF;
+}
+
+.case-logo {
+    width: 40px;
+    height: 40px;
+}
+
 footer {
     text-align: center;
     margin-top: 40px;
@@ -174,6 +247,76 @@ footer {
     background-color: #f4f4f4;
 }
 
+.cover-section {
+    display: flex;
+    gap: 265px;
+}
+.cs-left-half {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 167px;
+}
+
+.cs-project-title {
+    color: var(--Gray-gray-900, #13151A);
+
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.cs-project-description {
+    color: var(--Gray-gray-700, #5E6B81);
+
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px; /* 133.333% */
+    letter-spacing: -0.48px;
+}
+
+.cs-UX-Study {
+    color: var(--Blue-blue-600, #3676E0);
+
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.cs-case-vector {
+    width: 300.146px;
+    height: 35.427px;
+    transform: rotate(-4.153deg);
+    flex-shrink: 0;
+
+    fill: var(--Blue-blue-500, #3B82F6);
+}
+
+.cs-project-content {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.cs-project-info {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+
+.cs-left-top {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 /*this collapses everything to one column at 768px*/
 @media screen and (max-width: 768px) {
