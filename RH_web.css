@@ -257,6 +257,12 @@ footer {
     gap: 167px;
 }
 
+.cs-left-bottom {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
 .cs-project-title {
     color: var(--Gray-gray-900, #13151A);
 
@@ -317,6 +323,44 @@ footer {
     flex-direction: column;
     align-items: center;
 }
+
+.cs-product-overview {
+    display: flex;
+    flex-direction: column;
+}
+
+.p-overview-text {
+    font-family: Montserrat;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+}
+
+.product-extra {
+    display: flex;
+    flex-direction: row;
+    gap: 120px;
+}
+
+p {
+    margin: 0;
+}
+
+.Product-Overview {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
 
 /*this collapses everything to one column at 768px*/
 @media screen and (max-width: 768px) {
